@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <title>Tamagotchi</title>
 </head>
-<body class="bg-red-800">
+
+<body class="flex items-center ">
+    <div>
+        <h1>
+            Juego Tamagotchi
+        </h1>
+    </div>
+    <form action="">
+        <div>
+            <img src="" alt="foto_juego">
+        </div>
+        <div>
+            <label>Nombre:</label>
+            <p id="nombre"></p>
+        </div>
+        <div>
+            <label>Felicidad:</label>
+            <p id="felicidad"></p>
+        </div>
+        <div>
+            <label>Salud:</label>
+            <p id="salud"></p>
+        </div>
+        <div>
+            <label>Limpieza:</label>
+            <p id="limpieza"></p>
+        </div>
+        <div>
+            <label>Energia:</label>
+            <p id="energia"></p>
+        </div>
+        <div>
+            <p id="personalidad"></p>
+        </div>
+        <button onclick="duchar()">duchar</button>
+        <button onclick="alimentar()">alimentar</button>
+        <button onclick="jugar()">jugar</button>
+        <button onclick="dormir()">dormir</button>
+        <button onclick="reprender()">reprender</button>
+        <button onclick="acariciar()">acariciar</button>
+    </form>
+
     <script src="./app.js"></script>
 </body>
+
 </html>
