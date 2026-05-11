@@ -34,13 +34,13 @@ function mostrar() {
     const salud = document.getElementById("salud")
     const limpieza = document.getElementById("limpieza")
     const energia = document.getElementById("energia")
+    const personalidad = document.getElementById("personalidad")
 
     felicidad.innerText = "*".repeat(tamagotchi.felicidad)
     salud.innerText = "*".repeat(tamagotchi.salud)
     limpieza.innerText = "*".repeat(tamagotchi.limpieza)
     energia.innerText = "*".repeat(tamagotchi.energia)
 
-    document.getElementById("personalidad").innerText = tamagotchi.personalidad
 
     color(felicidad, tamagotchi.felicidad)
     color(salud, tamagotchi.salud)
@@ -48,7 +48,9 @@ function mostrar() {
     color(energia, tamagotchi.energia)
 
     if (tamagotchi.salud === 0) {
-        alert("Tu Tamagotchi está enfermo 💀")
+        personalidad.innerText= "Tu Tamagotchi está enfermo 💀"
+    } else{
+        personalidad.innerText = tamagotchi.personalidad
     }
 }
 
